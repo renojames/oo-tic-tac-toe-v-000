@@ -49,4 +49,13 @@ WIN_COMBINATIONS = [
     return turn
   end
 
+  def current_player
+    player = turn_count(@board)
+    if player.even?
+      return "X"
+    else
+      return "O"
+    end
+  end
+
 end
