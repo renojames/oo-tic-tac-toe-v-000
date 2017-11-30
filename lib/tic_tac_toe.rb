@@ -4,8 +4,6 @@ class TicTacToe
     @board = board || Array.new(9, " ")
   end
 
-end
-
 WIN_COMBINATIONS = [
   [0, 1, 2],
   [3, 4, 5],
@@ -23,3 +21,5 @@ WIN_COMBINATIONS = [
     puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
+
+end
