@@ -31,4 +31,8 @@ WIN_COMBINATIONS = [
     @board[index] = value
   end
 
+  def position_taken?(location)
+    @board[location] != " " && @board[location] != ""
+  end
+
 end
