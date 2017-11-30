@@ -86,4 +86,10 @@ WIN_COMBINATIONS = [
     return false
   end
 
+  def full?
+    @board.none? do |index|
+      index == " "
+    end
+  end
+
 end
