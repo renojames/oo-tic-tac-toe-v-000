@@ -108,10 +108,10 @@ WIN_COMBINATIONS = [
     end
   end
 
-  def winner(board)
-    result = won?(board)
+  def winner
+    result = won?
     if result
-      if board[result[0]] == "X"
+      if @board[result[0]] == "X"
         return "X"
       else
         return "O"
